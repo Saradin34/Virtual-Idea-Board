@@ -1,0 +1,28 @@
+.formContainer {
+  background-color: var(--card-background);
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 32px;
+}
+
+.inputField {
+  margin-bottom: 24px !important;
+}
+.inputField .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.submitButton {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) !important;
+  color: white !important;
+  padding: 16px 32px !important;
+  border-radius: 8px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*# sourceMappingURL=AddIdeaForm.module.css.map */

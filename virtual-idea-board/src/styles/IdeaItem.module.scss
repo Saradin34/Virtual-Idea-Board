@@ -1,0 +1,67 @@
+@import 'variables';
+
+.card {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: $spacing-unit * 2;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: $spacing-unit;
+}
+
+.description {
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.actions {
+  display: flex;
+  gap: $spacing-unit;
+  margin-top: $spacing-unit;
+}
+
+.upvoteButton, .commentButton, .deleteButton {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border-radius: 8px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.deleteButton {
+  background-color: #ff1744 !important;
+}
+
+.commentsSection {
+  margin-top: $spacing-unit;
+}
+
+.commentsTitle {
+  font-weight: 500;
+  margin-bottom: $spacing-unit / 2;
+}
+
+.commentsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.commentItem {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: $spacing-unit / 2;
+  border-radius: 4px;
+  margin-bottom: $spacing-unit / 2;
+}

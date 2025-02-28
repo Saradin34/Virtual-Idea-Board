@@ -1,0 +1,30 @@
+@import 'variables';
+
+.formContainer {
+  background-color: var(--card-background);
+  padding: $spacing-unit * 2;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: $spacing-unit * 2;
+}
+
+.inputField {
+  margin-bottom: $spacing-unit * 1.5 !important;
+
+  .MuiOutlinedInput-root {
+    border-radius: 8px;
+  }
+}
+
+.submitButton {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) !important;
+  color: white !important;
+  padding: $spacing-unit $spacing-unit * 2 !important;
+  border-radius: 8px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}

@@ -24,8 +24,11 @@ const ideasSlice = createSlice({
             const idea = state.ideas.find((i) => i.id === action.payload.id);
             if (idea) idea.comments.push(action.payload.comment);
         },
+        deleteIdea: (state, action: PayloadAction<string>) => {
+            state.ideas = state.ideas.filter((idea) => idea.id !== action.payload);
+        },
     },
 });
 
-export const { addIdea, upvoteIdea, addComment } = ideasSlice.actions;
+export const { addIdea, upvoteIdea, addComment, deleteIdea } = ideasSlice.actions;
 export default ideasSlice.reducer;

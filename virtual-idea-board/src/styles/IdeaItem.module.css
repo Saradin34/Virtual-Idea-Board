@@ -1,0 +1,65 @@
+.card {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 32px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.upvoteButton, .commentButton, .deleteButton {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border-radius: 8px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.upvoteButton:hover, .commentButton:hover, .deleteButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.deleteButton {
+  background-color: #ff1744 !important;
+}
+
+.commentsSection {
+  margin-top: 16px;
+}
+
+.commentsTitle {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.commentsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.commentItem {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/*# sourceMappingURL=IdeaItem.module.css.map */
