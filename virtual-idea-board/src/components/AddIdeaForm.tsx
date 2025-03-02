@@ -1,6 +1,7 @@
+/*
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addIdea } from '../store/ideasSlice';
+import { addIdea } from '../store/tasksSlice.ts';
 import { v4 as uuidv4 } from 'uuid';
 import { TextField, Button, Box, Typography } from '@mui/material';
 import styles from '../styles/AddIdeaForm.module.scss';
@@ -66,3 +67,4 @@ const AddIdeaForm: React.FC = () => {
 };
 
 export default AddIdeaForm;
+*/

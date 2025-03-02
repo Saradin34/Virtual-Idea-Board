@@ -1,11 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import ideasReducer from './ideasSlice';
+import tasksReducer from './tasksSlice';
 
 export const store = configureStore({
     reducer: {
-        ideas: ideasReducer,
+        tasks: tasksReducer,
     },
 });
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
+export type AppThunk = ThunkAction<void, RootState, unknown, Action<string>>;
